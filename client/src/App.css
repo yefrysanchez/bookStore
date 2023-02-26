@@ -1,3 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   font-family: sans-serif;
+  color: aliceblue;
+  background-color: rgb(17, 15, 28);
 }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.books{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.book{
+  width: 200px;
+  text-align: center;
+}
+
+.cover{
+  height: 200px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.cover img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.book h2{
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.book p{
+  margin-bottom: 1rem;
+}
+
+.btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn button{
+ border: none;
+ background-color: transparent;
+}
+
+.btn button:first-child{
+  border: 1px solid rgb(212, 76, 76);
+  color: rgb(212, 76, 76);
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+ }
+
+ .btn button:nth-child(2){
+  border: 1px solid rgb(76, 121, 212);
+  color: rgb(76, 121, 212);
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+ }
+
+ .add{
+  background-color: rgb(55, 153, 111);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+ }
+
+ a{
+  text-decoration: none;
+  color: inherit;
+ }
+
+ .form{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 250px;
+  padding: 1rem;
+  border: 1px solid gray;
+  margin: 5rem auto;
+ }
+
+ .form input{
+  padding: 0.5rem 1rem;
+ }

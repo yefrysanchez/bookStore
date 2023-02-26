@@ -29,7 +29,7 @@ const Add = () => {
   };
 
   return (
-    <div>
+    <div className="form">
       <h1>Add New Book</h1>
       <input onChange={onChange} type="text" placeholder="Title" name="title" />
       <input
@@ -45,7 +45,7 @@ const Add = () => {
         name="price"
       />
       <input onChange={onChange} type="text" placeholder="Cover" name="cover" />
-      <button onClick={onClick}>Add Book</button>
+      <button className="add" onClick={onClick}>Add Book</button>
     </div>
   );
 };
